@@ -113,6 +113,8 @@
     }
     pick();
     if (mq.addEventListener) mq.addEventListener("change", pick); else mq.addListener(pick);
+    window.addEventListener("resize", pick);
+    window.addEventListener("orientationchange", pick);
   })();
 </script>
 </body>
